@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DSLV DB Demo</string>
+    <string name="cancel">"  Cancel  "</string>
+    <string name="save">"  Save  "</string>
+    <string name="add">Add</string>
+    <string name="add_dummy_notes">Add dummy notes</string>
+    <string name="reset_all_items">Delete ALL items</string>
+    <string name="reset_to_default_items">Reset to default items</string>
+    <string name="note_name">"Note name: "</string>
+    <string name="note_details">"Details: "</string>
+
+</resources>

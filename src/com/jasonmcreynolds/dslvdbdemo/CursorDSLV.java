@@ -26,7 +26,6 @@ import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
-import com.mobeta.android.dslv.DragSortController;
 import com.mobeta.android.dslv.DragSortListView;
 import com.mobeta.android.dslv.SimpleDragSortCursorAdapter;
 
@@ -35,12 +34,6 @@ public class CursorDSLV extends SherlockFragmentActivity {
 	private MAdapter mMAdapter;
 	private DatabaseAdapter mDbHelper;
 	private DragSortListView mDslv;
-
-	public int dragStartMode = DragSortController.ON_DOWN;
-	public boolean removeEnabled = true;
-	public int removeMode = DragSortController.FLING_REMOVE;
-	public boolean sortEnabled = true;
-	public boolean dragEnabled = true;
 
 	/** Called when the activity is first created. */
 	@Override

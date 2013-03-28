@@ -37,7 +37,7 @@ public class ItemAddEditActivity extends SherlockActivity {
 		}
 
 		// setup and open connection to database
-		mDbHelper = new DatabaseAdapter(this);
+		mDbHelper = DatabaseAdapter.getInstance(getBaseContext());
 		mDbHelper.openConnection();
 
 		if (mEdit == true) {

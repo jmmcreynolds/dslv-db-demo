@@ -49,9 +49,9 @@ public class DatabaseAdapter extends SQLiteOpenHelper {
 		return sSingleton;
 	}
 
-	public DatabaseAdapter(Context ctxt) {
+	private DatabaseAdapter(Context ctxt) {
 		super(ctxt, DATABASE_NAME, null, SCHEMA_VERSION);
-		sSingleton = this;
+		//sSingleton = this;
 	}
 
 	public DatabaseAdapter openConnection() throws SQLException {

@@ -43,7 +43,7 @@ public class CursorDSLV extends SherlockFragmentActivity {
 
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-		mDbHelper = new DatabaseAdapter(this);
+		mDbHelper = DatabaseAdapter.getInstance(getBaseContext());
 		mDbHelper.openConnection();
 
 		displayItemList();

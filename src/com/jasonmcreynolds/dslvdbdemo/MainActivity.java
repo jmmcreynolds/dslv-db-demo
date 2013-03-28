@@ -25,7 +25,7 @@ public class MainActivity extends SherlockActivity implements OnClickListener {
 		setContentView(R.layout.activity_main);
 
 		// setup and open connection to database
-		mDbHelper = new DatabaseAdapter(this);
+		mDbHelper = DatabaseAdapter.getInstance(getBaseContext());
 		mDbHelper.openConnection();
 
 		// wire button to layout
@@ -37,7 +37,7 @@ public class MainActivity extends SherlockActivity implements OnClickListener {
 
 	public void resetDbConnection() {
 		mDbHelper.closeConnection();
-		mDbHelper = new DatabaseAdapter(this);
+		mDbHelper = DatabaseAdapter.getInstance(getBaseContext());
 		mDbHelper.openConnection();
 	}
 	
